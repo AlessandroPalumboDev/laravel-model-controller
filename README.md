@@ -18,7 +18,7 @@ Oggi facciamo la nostra prima vera interazione con il database utilizzando l’O
    php artisan make:controller Guest/PageController
 ```
 
-7. All’interno della funzione index() del controller, recuperate tutti i film dal database e passateli alla view, che quindi li visualizzerà a schermo, tramite delle card.
+7. All’interno della funzione index() del controller, recuperate tutti i film dal database e passateli alla view, che quindi li visualizzerà a schermo, tramite delle card. &check;
 
 8. BONUS:
     - Stilare il layout nei dettagli con Sass
