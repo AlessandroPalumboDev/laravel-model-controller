@@ -6,13 +6,13 @@ Oggi facciamo la nostra prima vera interazione con il database utilizzando l’O
 2. tramite phpMyAdmin create un nuovo database laravel_model_controller &check;
 3. Importate nel vostro database la tabella movies in allegato &check;
 4. inserite le vostre credenziali per il database nel file .env &check;
-5. Create un model Movie
+5. Create un model Movie &check;
 
 ```bash
    php artisan make:model Movie
 ```
 
-6. Create un controller che gestirà la rotta /
+6. Create un controller che gestirà la rotta / &check;
 
 ```bash
    php artisan make:controller Guest/PageController
