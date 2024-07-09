@@ -33,11 +33,12 @@
                     <div class="col-5">
                         <div class="card my-3">
                             <div class="card-body">
-                            <h5 class="card-title">{{$movie['title']}}</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Original title: {{$movie['original_title']}}</h6>
-                            <p class="card-text">Nationality: {{$movie['nationality']}}</p>
-                            <p class="card-text">Year: {{$movie['date']}}</p>
-                            <p class="card-text">Vote: {{$movie['vote']}}</p>
+                                <h5 class="card-title">{{$movie['title']}}</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Original title: {{$movie['original_title']}}</h6>
+                                <p class="card-text">Nationality: {{$movie['nationality']}}</p>
+                                {{-- <p class="card-text">Year: {{$movie['date']}}</p> --}}
+                                <p class="card-text">Year: {{\Carbon\Carbon::parse($movie['date'])->format('d/m/Y')}}</p>
+                                <p class="card-text">Vote: {{$movie['vote']}}</p>
                             </div>
                         </div>
                     </div>
@@ -47,12 +48,7 @@
     </main>
     <footer>
         <span class="rock-salt-regular p-3">AP</span>
-
     </footer>
-
-
-
-
 
     {{-- <img src="{{ Vite::asset('resources/img/duck.jpg') }}" alt="Paperella Laravel Template"> --}}
 
